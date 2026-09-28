@@ -1,0 +1,9 @@
+{
+  "name": "runcomfy-skills-studio",
+  "version": "1.0.0",
+  "description": "Visual Explorer & Playground for RunComfy AI Media Skills",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Báo Cáo Năng Lực AI Media - Danh Mục 33 Mô Hình Doanh Nghiệp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Soft Lighting -->
+  <div class="ambient-glow glow-indigo"></div>
+  <div class="ambient-glow glow-violet"></div>
+
+  <div class="app-container">
+    <!-- Executive Navbar -->
+    <header class="navbar">
+      <div class="nav-brand">
+        <div class="brand-icon">
+          <span>📊</span>
+        </div>
+        <div class="brand-info">
+          <h1>Báo Cáo Năng Lực Công Nghệ AI Media</h1>
+          <p>Danh Mục Chuẩn Hóa 33 Giải Pháp Sinh Video, Hình Ảnh & Kỹ Xảo Kỹ Thuật Số</p>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <div class="status-badge">
+          <span class="status-pulse"></span>
+          <span>Trạng thái: <strong>33 Giải Pháp Đã Chuẩn Hóa</strong></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Executive Summary Metrics (Tinh gọn, không đơn giá) -->
+    <section class="executive-summary-grid">
+      <div class="kpi-card">
+        <div class="kpi-icon-wrap kpi-blue">📂</div>
+        <div class="kpi-data">
+          <span class="kpi-num">6 Nhóm Giải Pháp</span>
+          <span class="kpi-label">Phân Hệ Chức Năng</span>
+          <span class="kpi-sub">Video, Ảnh, Kỹ xảo, Nhân vật, Âm thanh & Điều khiển</span>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon-wrap kpi-purple">🚀</div>
+        <div class="kpi-data">
+          <span class="kpi-num">33 Mô Hình AI</span>
+          <span class="kpi-label">Năng Lực Công Nghệ</span>
+          <span class="kpi-sub">Seedance 2.5, Wan 2.7, Kling 3.0, Flux 2, Veo 3</span>
+        </div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon-wrap kpi-emerald">⚡</div>
+        <div class="kpi-data">
+          <span class="kpi-num">100% Sẵn Sàng</span>
+          <span class="kpi-label">Khả Năng Tích Hợp</span>
+          <span class="kpi-sub">Đầy đủ thông số API và mã nguồn kết nối</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Strategic Brief -->
+    <section class="executive-brief">
+      <div class="brief-tag">📋 TÓM TẮT</div>
+      <h2>Mục Đích & Ý Nghĩa Của Bộ Thư Viện Kỹ Năng (Skills Library)</h2>
+      <p>
+        Đây là tài liệu đặc tả kỹ thuật và tiêu chuẩn tích hợp cho <strong>33 mô hình AI Media hàng đầu thế giới hiện nay</strong> (thuộc hệ sinh thái RunComfy). Bộ tài liệu này giúp đội ngũ kỹ thuật và các trợ lý lập trình (AI Agent) nắm rõ chính xác <strong>cấu trúc tham số, quy chuẩn prompt và mã nguồn kết nối</strong> để có thể tự động hóa việc sản xuất video, hình ảnh và âm thanh cho các phần mềm của công ty.
+      </p>
+    </section>
+
+    <!-- Main Workspace -->
+    <main class="main-layout">
+      <!-- Left Column: Search & Collapsible Category Groups -->
+      <section class="catalog-section">
+        <!-- Search Card -->
+        <div class="search-filter-card">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" placeholder="Tìm kiếm mô hình (VD: seedance, wan, kling, flux, lipsync...)" autocomplete="off">
+            <button id="clear-search" class="clear-search-btn" style="display:none;">✕</button>
+          </div>
+          <div class="accordion-toggle-bar">
+            <span id="catalog-count-label">Hiển thị 6 phân hệ (33 giải pháp)</span>
+            <div class="accordion-actions">
+              <button class="btn-text-action" id="btn-expand-all">Mở tất cả</button>
+              <span class="sep">|</span>
+              <button class="btn-text-action" id="btn-collapse-all">Thu gọn tất cả</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="category-accordion-container" id="accordion-container">
+          <!-- Rendered dynamically as 6 tidy collapsible sections with distinct color coding -->
+        </div>
+      </section>
+
+      <!-- Right Column: Technical Specification & Integration Details -->
+      <aside class="detail-drawer" id="detail-drawer">
+        <!-- Empty State -->
+        <div class="empty-detail-state" id="empty-detail">
+          <div class="icon">📑</div>
+          <h3>Chọn một Giải Pháp để xem Báo Cáo Kỹ Thuật</h3>
+          <p>Nhấp vào bất kỳ giải pháp nào bên danh mục để xem thông số đầu vào chuẩn hóa, mẫu prompt thực tế, mã nguồn tích hợp và hướng dẫn tối ưu chất lượng.</p>
+        </div>
+
+        <!-- Active Content -->
+        <div class="detail-active-view" id="detail-content" style="display:none;">
+          <!-- Header Block -->
+          <div class="detail-header-block">
+            <div class="detail-top-badges">
+              <span id="detail-category-badge" class="badge">Phân Hệ</span>
+              <span class="badge badge-verified">✓ Đặc Tả Chính Thức</span>
+            </div>
+            <h2 id="detail-title" class="detail-title-heading">Tên Mô Hình</h2>
+            <p id="detail-description" class="detail-desc-text">Mô tả tổng quan</p>
+            <div class="endpoint-banner">
+              <span>Đường dẫn API:</span>
+              <code id="detail-endpoint">vendor/model/endpoint</code>
+              <button class="copy-mini-btn" id="btn-copy-endpoint" title="Sao chép Endpoint">📋</button>
+            </div>
+          </div>
+
+          <!-- Navigation Tabs -->
+          <div class="workspace-tabs">
+            <button class="tab-nav-btn active" data-tab="tab-prompts">✨ 1. Mẫu Prompt Thực Tế</button>
+            <button class="tab-nav-btn" data-tab="tab-specs">📋 2. Thông Số Đầu Vào (API Schema)</button>
+            <button class="tab-nav-btn" data-tab="tab-code">💻 3. Mã Nguồn Tích Hợp (Python / Node)</button>
+            <button class="tab-nav-btn" data-tab="tab-prompting">💡 4. Tiêu Chuẩn Viết Prompt</button>
+            <button class="tab-nav-btn" data-tab="tab-agent">🤖 5. Cấu Hình Cho AI Agent</button>
+          </div>
+
+          <!-- Tab 1: Sample Prompts (Mẫu Prompt Thực Tế - Số 1) -->
+          <div class="tab-panel active" id="tab-prompts">
+            <div class="panel-intro-bar">
+              <span>Các mẫu câu lệnh prompt thực tế minh họa cách điều khiển mô hình (kèm giải thích tiếng Việt):</span>
+            </div>
+            <div class="sample-prompts-list" id="sample-prompts-container">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Tab 2: Real Technical Specifications Table -->
+          <div class="tab-panel" id="tab-specs">
+            <div class="panel-intro-bar">
+              <span>Đặc tả các trường dữ liệu đầu vào bắt buộc & tùy chọn theo chuẩn RunComfy:</span>
+            </div>
+            <div class="specs-table-wrapper">
+              <table class="specs-table">
+                <thead>
+                  <tr>
+                    <th>Tên Tham Số</th>
+                    <th>Kiểu Dữ Liệu</th>
+                    <th>Bắt Buộc</th>
+                    <th>Giá Trị Mặc Định</th>
+                    <th>Mô Tả & Ghi Chú Kỹ Thuật</th>
+                  </tr>
+                </thead>
+                <tbody id="specs-table-body">
+                  <!-- Rendered dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tab 2: Code Snippets (Python / Node / CLI / cURL) -->
+          <div class="tab-panel" id="tab-code">
+            <div class="code-format-bar">
+              <button class="format-btn active" data-fmt="python">Python 3 (Windows & Linux)</button>
+              <button class="format-btn" data-fmt="node">Node.js (Fetch API)</button>
+              <button class="format-btn" data-fmt="cli">CLI Command</button>
+              <button class="format-btn" data-fmt="curl">cURL REST API</button>
+            </div>
+            <div class="code-terminal-box">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-amber"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="terminal-title" id="code-snippet-title">Python 3 Script</span>
+                <button class="btn-copy-white" id="btn-copy-code">Sao Chép Mã</button>
+              </div>
+              <pre><code id="code-snippet-content"></code></pre>
+            </div>
+          </div>
+
+          <!-- Tab 3: Prompting & Best Practices -->
+          <div class="tab-panel" id="tab-prompting">
+            <div class="tips-wrapper" id="tips-container">
+              <!-- Rendered tips -->
+            </div>
+          </div>
+
+          <!-- Tab 4: AI Agent Deployment -->
+          <div class="tab-panel" id="tab-agent">
+            <div class="enterprise-integration-wrap">
+              <div class="enterprise-step-card">
+                <h4>Quy Tắc Nạp Vào AI Coding Assistant (Cursor / Claude / Antigravity)</h4>
+                <p>Nạp trực tiếp khối tri thức này vào <code>.cursorrules</code> hoặc System Prompt để AI tự động gọi chính xác mô hình:</p>
+                <div class="terminal-header" style="background:#0f172a; padding: 8px 12px; border-radius: 8px 8px 0 0;">
+                  <span class="terminal-title">System Rule Spec</span>
+                  <button class="btn-copy-white" id="btn-copy-agent-prompt">Sao Chép Spec</button>
+                </div>
+                <pre style="border-radius: 0 0 8px 8px;"><code id="agent-prompt-code"></code></pre>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Toast Notice -->
+  <div id="toast" class="toast-notice"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
