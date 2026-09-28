@@ -68,10 +68,16 @@ function fallbackCopy(text, successMsg) {
   showToast(successMsg);
 }
 
-// Fetch all skills on load
+// Fetch all skills on load (Tương thích 100% Cloudflare Pages & Local Server)
 async function initApp() {
   try {
-    const res = await fetch('/api/skills');
+    let res;
+    try {
+      res = await fetch('./data/skills.json');
+      if (!res.ok) throw new Error('Static not found');
+    } catch (_) {
+      res = await fetch('/api/skills');
+    }
     const data = await res.json();
     allSkills = data.skills || [];
 
